@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social media app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="text-align: center;">Create Post</h2>
+    <form onsubmit="createPostHandler(event)">
+        <div class="form-container">
+            
+            <label for="image-url">Post Link:</label><br>
+            <input type="url" name="imageurl" id="image-url"><br>
+            <label for="description">Post Description:</label><br>
+            <input type="text" name="description" id="description">
+             <br>
+            <button type="submit">Create Post</button>
+        </div>
+        
+    </form>
+    <h2 style="text-align: center;">Post</h2>
+
+    <div id="postList"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
